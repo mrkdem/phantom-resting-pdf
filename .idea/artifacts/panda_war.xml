@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="panda:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="panda.war">
+      <element id="artifact" artifact-name="panda:war exploded" />
+    </root>
+  </artifact>
+</component>

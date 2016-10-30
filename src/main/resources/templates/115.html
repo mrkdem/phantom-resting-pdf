@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+Username: <p id="username"></p>
+
+<script>
+    var injectedData = '{{=it.data}}';
+
+//    employees = JSON.parse(injectedData);
+//    document.getElementById("username").innerHTML = obj.firstname + " " + obj.lastname;
+
+	obj = JSON.parse(injectedData);
+
+    userP = document.getElementById("username");
+    obj.employees.forEach(myFunction);
+    function myFunction(user, index) {
+        userP.innerHTML = userP.innerHTML + user.firstname + " " + user.lastname + "<br>";
+    }
+</script>
+</body>
+
+</html>
